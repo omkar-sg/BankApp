@@ -42,17 +42,10 @@
             this.depositeButton = new System.Windows.Forms.Button();
             this.depositeTextBox = new System.Windows.Forms.TextBox();
             this.widrawTextBox = new System.Windows.Forms.TextBox();
-            this.fixedDipositeGroupBox = new System.Windows.Forms.GroupBox();
-            this.viewFixedDipositeLabel = new System.Windows.Forms.Label();
-            this.viewFixedDipositeButton = new System.Windows.Forms.Button();
-            this.createFixedDipositeButton = new System.Windows.Forms.Button();
-            this.createFixedDipositeTextBox = new System.Windows.Forms.TextBox();
-            this.createFixedDipositeLabel = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.accountToolStrip = new System.Windows.Forms.ToolStripComboBox();
             this.investmentToolStrip = new System.Windows.Forms.ToolStripComboBox();
             this.accountDetailsGroupBox.SuspendLayout();
-            this.fixedDipositeGroupBox.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -60,7 +53,7 @@
             // 
             this.welcomeLabel.AutoSize = true;
             this.welcomeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.welcomeLabel.Location = new System.Drawing.Point(104, 40);
+            this.welcomeLabel.Location = new System.Drawing.Point(5, 46);
             this.welcomeLabel.Name = "welcomeLabel";
             this.welcomeLabel.Size = new System.Drawing.Size(223, 29);
             this.welcomeLabel.TabIndex = 0;
@@ -80,9 +73,9 @@
             this.accountDetailsGroupBox.Controls.Add(this.depositeButton);
             this.accountDetailsGroupBox.Controls.Add(this.depositeTextBox);
             this.accountDetailsGroupBox.Controls.Add(this.widrawTextBox);
-            this.accountDetailsGroupBox.Location = new System.Drawing.Point(25, 83);
+            this.accountDetailsGroupBox.Location = new System.Drawing.Point(151, 87);
             this.accountDetailsGroupBox.Name = "accountDetailsGroupBox";
-            this.accountDetailsGroupBox.Size = new System.Drawing.Size(430, 342);
+            this.accountDetailsGroupBox.Size = new System.Drawing.Size(548, 342);
             this.accountDetailsGroupBox.TabIndex = 1;
             this.accountDetailsGroupBox.TabStop = false;
             this.accountDetailsGroupBox.Text = "Account Details";
@@ -162,7 +155,7 @@
             // 
             // viewBalanceButton
             // 
-            this.viewBalanceButton.Location = new System.Drawing.Point(109, 282);
+            this.viewBalanceButton.Location = new System.Drawing.Point(168, 275);
             this.viewBalanceButton.Name = "viewBalanceButton";
             this.viewBalanceButton.Size = new System.Drawing.Size(162, 40);
             this.viewBalanceButton.TabIndex = 2;
@@ -193,65 +186,6 @@
             this.widrawTextBox.Name = "widrawTextBox";
             this.widrawTextBox.Size = new System.Drawing.Size(135, 22);
             this.widrawTextBox.TabIndex = 0;
-            // 
-            // fixedDipositeGroupBox
-            // 
-            this.fixedDipositeGroupBox.Controls.Add(this.viewFixedDipositeLabel);
-            this.fixedDipositeGroupBox.Controls.Add(this.viewFixedDipositeButton);
-            this.fixedDipositeGroupBox.Controls.Add(this.createFixedDipositeButton);
-            this.fixedDipositeGroupBox.Controls.Add(this.createFixedDipositeTextBox);
-            this.fixedDipositeGroupBox.Controls.Add(this.createFixedDipositeLabel);
-            this.fixedDipositeGroupBox.Location = new System.Drawing.Point(474, 83);
-            this.fixedDipositeGroupBox.Name = "fixedDipositeGroupBox";
-            this.fixedDipositeGroupBox.Size = new System.Drawing.Size(307, 258);
-            this.fixedDipositeGroupBox.TabIndex = 2;
-            this.fixedDipositeGroupBox.TabStop = false;
-            this.fixedDipositeGroupBox.Text = "Fixed Diposit";
-            // 
-            // viewFixedDipositeLabel
-            // 
-            this.viewFixedDipositeLabel.AutoSize = true;
-            this.viewFixedDipositeLabel.Location = new System.Drawing.Point(16, 155);
-            this.viewFixedDipositeLabel.Name = "viewFixedDipositeLabel";
-            this.viewFixedDipositeLabel.Size = new System.Drawing.Size(117, 16);
-            this.viewFixedDipositeLabel.TabIndex = 4;
-            this.viewFixedDipositeLabel.Text = "View Fixed Diposit";
-            // 
-            // viewFixedDipositeButton
-            // 
-            this.viewFixedDipositeButton.Location = new System.Drawing.Point(84, 199);
-            this.viewFixedDipositeButton.Name = "viewFixedDipositeButton";
-            this.viewFixedDipositeButton.Size = new System.Drawing.Size(123, 27);
-            this.viewFixedDipositeButton.TabIndex = 3;
-            this.viewFixedDipositeButton.Text = "View ";
-            this.viewFixedDipositeButton.UseVisualStyleBackColor = true;
-            this.viewFixedDipositeButton.Click += new System.EventHandler(this.viewFixedDipositeButton_Click);
-            // 
-            // createFixedDipositeButton
-            // 
-            this.createFixedDipositeButton.Location = new System.Drawing.Point(184, 93);
-            this.createFixedDipositeButton.Name = "createFixedDipositeButton";
-            this.createFixedDipositeButton.Size = new System.Drawing.Size(75, 23);
-            this.createFixedDipositeButton.TabIndex = 2;
-            this.createFixedDipositeButton.Text = "Create";
-            this.createFixedDipositeButton.UseVisualStyleBackColor = true;
-            this.createFixedDipositeButton.Click += new System.EventHandler(this.createFixedDipositeButton_Click);
-            // 
-            // createFixedDipositeTextBox
-            // 
-            this.createFixedDipositeTextBox.Location = new System.Drawing.Point(38, 93);
-            this.createFixedDipositeTextBox.Name = "createFixedDipositeTextBox";
-            this.createFixedDipositeTextBox.Size = new System.Drawing.Size(100, 22);
-            this.createFixedDipositeTextBox.TabIndex = 1;
-            // 
-            // createFixedDipositeLabel
-            // 
-            this.createFixedDipositeLabel.AutoSize = true;
-            this.createFixedDipositeLabel.Location = new System.Drawing.Point(16, 58);
-            this.createFixedDipositeLabel.Name = "createFixedDipositeLabel";
-            this.createFixedDipositeLabel.Size = new System.Drawing.Size(128, 16);
-            this.createFixedDipositeLabel.TabIndex = 0;
-            this.createFixedDipositeLabel.Text = "Create Fixed Diposit";
             // 
             // menuStrip1
             // 
@@ -284,7 +218,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.fixedDipositeGroupBox);
             this.Controls.Add(this.accountDetailsGroupBox);
             this.Controls.Add(this.welcomeLabel);
             this.Controls.Add(this.menuStrip1);
@@ -293,8 +226,6 @@
             this.Load += new System.EventHandler(this.Form2_Load);
             this.accountDetailsGroupBox.ResumeLayout(false);
             this.accountDetailsGroupBox.PerformLayout();
-            this.fixedDipositeGroupBox.ResumeLayout(false);
-            this.fixedDipositeGroupBox.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -313,12 +244,6 @@
         private System.Windows.Forms.Button viewBalanceButton;
         private System.Windows.Forms.Label accountTypeLabel;
         private System.Windows.Forms.Label nameLabel;
-        private System.Windows.Forms.GroupBox fixedDipositeGroupBox;
-        private System.Windows.Forms.Label viewFixedDipositeLabel;
-        private System.Windows.Forms.Button viewFixedDipositeButton;
-        private System.Windows.Forms.Button createFixedDipositeButton;
-        private System.Windows.Forms.TextBox createFixedDipositeTextBox;
-        private System.Windows.Forms.Label createFixedDipositeLabel;
         private System.Windows.Forms.Label lastNameLabel;
         private System.Windows.Forms.Label accountType1Label;
         private System.Windows.Forms.Label fullNameLabel;

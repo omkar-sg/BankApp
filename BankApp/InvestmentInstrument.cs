@@ -29,6 +29,7 @@ namespace BankApp
 
         public bool CreateInvestment(int amt)
         {
+            //if (InvestmentType == "Fixed") { }
             Balance = Balance + amt;
             return true;
 

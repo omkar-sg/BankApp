@@ -13,7 +13,7 @@ namespace BankApp
     public partial class Form2 : Form
     {
         Account account;
-        InvestmentInstrument fixedDiposit = new InvestmentInstrument();
+        //InvestmentInstrument fixedDiposit = new InvestmentInstrument();
 
         public Form2()
         {
@@ -64,25 +64,9 @@ namespace BankApp
             //this.account.transaction.fixdeposit += fixedDiposit.CreateFD;
         }
 
-        private void createFixedDipositeButton_Click(object sender, EventArgs e)
-        {
-            var amount = int.Parse(createFixedDipositeTextBox.Text);
-            //this.account.transaction.onFixDeposit(amount,20);
+        
 
-            
-            bool fdMessage= this.account.transaction.onWithdraw(amount);
-            if (fdMessage) {
-                this.account.transaction.onFixDeposit(amount);
-                MessageBox.Show("Deposited Successfully : " + amount);
-                
-            }
-            
-        }
-
-        private void viewFixedDipositeButton_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show(fixedDiposit.Balance.ToString());
-        }
+        
 
         private void investmentToolStrip_Click(object sender, EventArgs e)
         {
@@ -94,5 +78,7 @@ namespace BankApp
         {
             
         }
+
+        
     }
 }

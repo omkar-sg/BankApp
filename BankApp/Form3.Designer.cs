@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.fixedDipositGroupBox = new System.Windows.Forms.GroupBox();
-            this.recurringDipositGroupBox = new System.Windows.Forms.GroupBox();
-            this.createFDTextBox = new System.Windows.Forms.TextBox();
-            this.createRDTextBox = new System.Windows.Forms.TextBox();
-            this.createFDButton = new System.Windows.Forms.Button();
             this.viewFDButton = new System.Windows.Forms.Button();
-            this.createRDButton = new System.Windows.Forms.Button();
+            this.createFDButton = new System.Windows.Forms.Button();
+            this.createFDTextBox = new System.Windows.Forms.TextBox();
+            this.recurringDipositGroupBox = new System.Windows.Forms.GroupBox();
             this.viewRDButton = new System.Windows.Forms.Button();
+            this.createRDButton = new System.Windows.Forms.Button();
+            this.createRDTextBox = new System.Windows.Forms.TextBox();
             this.fixedDipositGroupBox.SuspendLayout();
             this.recurringDipositGroupBox.SuspendLayout();
             this.SuspendLayout();
@@ -52,6 +52,33 @@
             this.fixedDipositGroupBox.TabStop = false;
             this.fixedDipositGroupBox.Text = "Fixed Diposit";
             // 
+            // viewFDButton
+            // 
+            this.viewFDButton.Location = new System.Drawing.Point(92, 145);
+            this.viewFDButton.Name = "viewFDButton";
+            this.viewFDButton.Size = new System.Drawing.Size(75, 23);
+            this.viewFDButton.TabIndex = 2;
+            this.viewFDButton.Text = "View FD";
+            this.viewFDButton.UseVisualStyleBackColor = true;
+            this.viewFDButton.Click += new System.EventHandler(this.viewFDButton_Click);
+            // 
+            // createFDButton
+            // 
+            this.createFDButton.Location = new System.Drawing.Point(195, 65);
+            this.createFDButton.Name = "createFDButton";
+            this.createFDButton.Size = new System.Drawing.Size(75, 23);
+            this.createFDButton.TabIndex = 1;
+            this.createFDButton.Text = "Create FD";
+            this.createFDButton.UseVisualStyleBackColor = true;
+            this.createFDButton.Click += new System.EventHandler(this.createFDButton_Click);
+            // 
+            // createFDTextBox
+            // 
+            this.createFDTextBox.Location = new System.Drawing.Point(35, 65);
+            this.createFDTextBox.Name = "createFDTextBox";
+            this.createFDTextBox.Size = new System.Drawing.Size(100, 22);
+            this.createFDTextBox.TabIndex = 0;
+            // 
             // recurringDipositGroupBox
             // 
             this.recurringDipositGroupBox.Controls.Add(this.viewRDButton);
@@ -64,39 +91,15 @@
             this.recurringDipositGroupBox.TabStop = false;
             this.recurringDipositGroupBox.Text = "Recurring Diposit";
             // 
-            // createFDTextBox
+            // viewRDButton
             // 
-            this.createFDTextBox.Location = new System.Drawing.Point(35, 65);
-            this.createFDTextBox.Name = "createFDTextBox";
-            this.createFDTextBox.Size = new System.Drawing.Size(100, 22);
-            this.createFDTextBox.TabIndex = 0;
-            // 
-            // createRDTextBox
-            // 
-            this.createRDTextBox.Location = new System.Drawing.Point(16, 65);
-            this.createRDTextBox.Name = "createRDTextBox";
-            this.createRDTextBox.Size = new System.Drawing.Size(100, 22);
-            this.createRDTextBox.TabIndex = 1;
-            // 
-            // createFDButton
-            // 
-            this.createFDButton.Location = new System.Drawing.Point(195, 65);
-            this.createFDButton.Name = "createFDButton";
-            this.createFDButton.Size = new System.Drawing.Size(75, 23);
-            this.createFDButton.TabIndex = 1;
-            this.createFDButton.Text = "Create FD";
-            this.createFDButton.UseVisualStyleBackColor = true;
-            this.createFDButton.Click += new System.EventHandler(this.createFDButton_Click);
-            // 
-            // viewFDButton
-            // 
-            this.viewFDButton.Location = new System.Drawing.Point(92, 145);
-            this.viewFDButton.Name = "viewFDButton";
-            this.viewFDButton.Size = new System.Drawing.Size(75, 23);
-            this.viewFDButton.TabIndex = 2;
-            this.viewFDButton.Text = "View FD";
-            this.viewFDButton.UseVisualStyleBackColor = true;
-            this.viewFDButton.Click += new System.EventHandler(this.viewFDButton_Click);
+            this.viewRDButton.Location = new System.Drawing.Point(122, 145);
+            this.viewRDButton.Name = "viewRDButton";
+            this.viewRDButton.Size = new System.Drawing.Size(75, 23);
+            this.viewRDButton.TabIndex = 3;
+            this.viewRDButton.Text = "View RD";
+            this.viewRDButton.UseVisualStyleBackColor = true;
+            this.viewRDButton.Click += new System.EventHandler(this.viewRDButton_Click);
             // 
             // createRDButton
             // 
@@ -106,15 +109,14 @@
             this.createRDButton.TabIndex = 3;
             this.createRDButton.Text = "Create RD";
             this.createRDButton.UseVisualStyleBackColor = true;
+            this.createRDButton.Click += new System.EventHandler(this.createRDButton_Click);
             // 
-            // viewRDButton
+            // createRDTextBox
             // 
-            this.viewRDButton.Location = new System.Drawing.Point(122, 145);
-            this.viewRDButton.Name = "viewRDButton";
-            this.viewRDButton.Size = new System.Drawing.Size(75, 23);
-            this.viewRDButton.TabIndex = 3;
-            this.viewRDButton.Text = "View RD";
-            this.viewRDButton.UseVisualStyleBackColor = true;
+            this.createRDTextBox.Location = new System.Drawing.Point(16, 65);
+            this.createRDTextBox.Name = "createRDTextBox";
+            this.createRDTextBox.Size = new System.Drawing.Size(100, 22);
+            this.createRDTextBox.TabIndex = 1;
             // 
             // Form3
             // 

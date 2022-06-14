@@ -15,6 +15,7 @@ namespace BankApp
         InvestmentFactory factory = new InvestmentFactory();
         Account account;
         InvestmentInstrument fd ;
+        InvestmentInstrument rd;
         public Form3()
         {
             InitializeComponent();
@@ -25,6 +26,7 @@ namespace BankApp
         {
             this.account = account;
             this.fd = factory.CreateInvestmentAcc("Fixed");
+            this.rd = factory.CreateInvestmentAcc("Recurring");
             InitializeComponent();
         }
 
@@ -44,6 +46,21 @@ namespace BankApp
         private void viewFDButton_Click(object sender, EventArgs e)
         {
             MessageBox.Show(fd.Balance.ToString());
+        }
+
+        private void createRDButton_Click(object sender, EventArgs e)
+        {
+            var amt = Convert.ToInt32(createRDTextBox.Text);
+            var msg = account.transaction.onWithdraw(amt);
+            //var fd = factory.CreateInvestmentAcc("Fixed");
+            if (msg) { rd.transaction.onRecurringDeposit(amt); MessageBox.Show("Recurring Diposit Created"); }
+            else { MessageBox.Show(" Recurring Diposit Creation Failed"); }
+
+        }
+
+        private void viewRDButton_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(rd.Balance.ToString());
         }
     }
 }

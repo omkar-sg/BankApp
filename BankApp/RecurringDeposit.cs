@@ -11,7 +11,10 @@ namespace BankApp
         public RecurringDeposit()
         {
             InvestmentType = "Recuuring";
+            transaction.recurringdeposit += CreateInvestment;
 
         }
+
+        
     }
 }

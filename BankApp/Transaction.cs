@@ -11,7 +11,7 @@ namespace BankApp
     public class Transaction
     {
         public event transactionEventHandler withdraw, deposit;
-        public event fdEventHandler fixdeposit;
+        public event fdEventHandler fixdeposit, recurringdeposit;
 
         public bool onWithdraw(int amt)
         {
@@ -36,6 +36,16 @@ namespace BankApp
             if (fixdeposit != null)
             {
                return fixdeposit(amt);
+
+            }
+            return false;
+        }
+
+        public bool onRecurringDeposit(int amt)
+        {
+            if (recurringdeposit != null)
+            {
+                return recurringdeposit(amt);
 
             }
             return false;
