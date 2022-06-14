@@ -48,15 +48,19 @@
             this.createFixedDipositeButton = new System.Windows.Forms.Button();
             this.createFixedDipositeTextBox = new System.Windows.Forms.TextBox();
             this.createFixedDipositeLabel = new System.Windows.Forms.Label();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.accountToolStrip = new System.Windows.Forms.ToolStripComboBox();
+            this.investmentToolStrip = new System.Windows.Forms.ToolStripComboBox();
             this.accountDetailsGroupBox.SuspendLayout();
             this.fixedDipositeGroupBox.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // welcomeLabel
             // 
             this.welcomeLabel.AutoSize = true;
             this.welcomeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.welcomeLabel.Location = new System.Drawing.Point(50, 9);
+            this.welcomeLabel.Location = new System.Drawing.Point(104, 40);
             this.welcomeLabel.Name = "welcomeLabel";
             this.welcomeLabel.Size = new System.Drawing.Size(223, 29);
             this.welcomeLabel.TabIndex = 0;
@@ -249,6 +253,32 @@
             this.createFixedDipositeLabel.TabIndex = 0;
             this.createFixedDipositeLabel.Text = "Create Fixed Diposit";
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.accountToolStrip,
+            this.investmentToolStrip});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(800, 32);
+            this.menuStrip1.TabIndex = 3;
+            this.menuStrip1.Text = "Investment";
+            // 
+            // accountToolStrip
+            // 
+            this.accountToolStrip.Name = "accountToolStrip";
+            this.accountToolStrip.Size = new System.Drawing.Size(121, 28);
+            this.accountToolStrip.Text = "Account";
+            this.accountToolStrip.Click += new System.EventHandler(this.accountToolStrip_Click);
+            // 
+            // investmentToolStrip
+            // 
+            this.investmentToolStrip.Name = "investmentToolStrip";
+            this.investmentToolStrip.Size = new System.Drawing.Size(121, 28);
+            this.investmentToolStrip.Text = "Investment";
+            this.investmentToolStrip.Click += new System.EventHandler(this.investmentToolStrip_Click);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -257,6 +287,7 @@
             this.Controls.Add(this.fixedDipositeGroupBox);
             this.Controls.Add(this.accountDetailsGroupBox);
             this.Controls.Add(this.welcomeLabel);
+            this.Controls.Add(this.menuStrip1);
             this.Name = "Form2";
             this.Text = "Form2";
             this.Load += new System.EventHandler(this.Form2_Load);
@@ -264,6 +295,8 @@
             this.accountDetailsGroupBox.PerformLayout();
             this.fixedDipositeGroupBox.ResumeLayout(false);
             this.fixedDipositeGroupBox.PerformLayout();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -291,5 +324,8 @@
         private System.Windows.Forms.Label fullNameLabel;
         private System.Windows.Forms.Label ageLabel;
         private System.Windows.Forms.Label ageNameLabel;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripComboBox accountToolStrip;
+        private System.Windows.Forms.ToolStripComboBox investmentToolStrip;
     }
 }

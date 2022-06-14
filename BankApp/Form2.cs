@@ -61,7 +61,7 @@ namespace BankApp
 
         private void Form2_Load(object sender, EventArgs e)
         {
-            this.account.transaction.fixdeposit += fixedDiposit.CreateFD;
+            //this.account.transaction.fixdeposit += fixedDiposit.CreateFD;
         }
 
         private void createFixedDipositeButton_Click(object sender, EventArgs e)
@@ -81,7 +81,18 @@ namespace BankApp
 
         private void viewFixedDipositeButton_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(fixedDiposit.FixedDiposit.ToString());
+            MessageBox.Show(fixedDiposit.Balance.ToString());
+        }
+
+        private void investmentToolStrip_Click(object sender, EventArgs e)
+        {
+            Form3 f3 = new Form3(this.account);
+            f3.Show();
+        }
+
+        private void accountToolStrip_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

@@ -9,7 +9,8 @@ namespace BankApp
 {
     public class AccountEnum :IEnumerator
     {
-        public List<string> _account=new List<string>();
+        public List<string> _account = new List<string>();
+        //string[] _account;
 
         // Enumerators are positioned before the first element
         // until the first MoveNext() call.
@@ -19,8 +20,10 @@ namespace BankApp
         public AccountEnum() { }
         public AccountEnum(string firstname,string lastname)
         {
-            _account.Add(firstname);
-            _account.Add(lastname);
+            //_account.Add(firstname);
+            //_account.Add(lastname);
+            _account.Append(firstname);
+            _account.Append(lastname);
         }
 
         public bool MoveNext()

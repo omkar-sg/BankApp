@@ -6,17 +6,39 @@ using System.Threading.Tasks;
 
 namespace BankApp
 {
-    public class InvestmentInstrument
+    public class InvestmentInstrument:AbstractAccount
     {
-        public int FixedDiposit { get; set; }=0;
-        public int RecurringDiposit { get; set; }
+        public Transaction transaction = new Transaction();
+        //public int FixedDiposit { get; set; }=0;
+        public int Balance { get; set; }
+        public string InvestmentType { get; set; }
+        //public int RecurringDiposit { get; set; }
 
-        public bool CreateFD(int amt)
+        public override string AccountDetails()
         {
-            FixedDiposit=FixedDiposit+amt;
+            return string.Format("Investment Type : {0}  Available Balance : {1} ",InvestmentType, Balance);
+        }
+
+
+        //public bool CreateFD(int amt)
+        //{
+        //    FixedDiposit=FixedDiposit+amt;
+        //    return true;
+
+        //}
+
+        public bool CreateInvestment(int amt)
+        {
+            Balance = Balance + amt;
             return true;
 
         }
+
+        //public bool CreateRD(int amt)
+        //{
+        //    RecurringDiposit = RecurringDiposit+amt;
+        //    return true;
+        //}
         
 
 

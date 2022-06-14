@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BankApp
 {
-    public class Account
+    public class Account:AbstractAccount
     {
         public Transaction transaction = new Transaction();
         public InvestmentInstrument instrument = new InvestmentInstrument();    
@@ -16,7 +16,7 @@ namespace BankApp
         public int Age { get; set; }
         public int Balance { get; set; } = 0;
         //public int FixedDepositBalance { get; set; } = 0;
-        public int AccountNumber { get; set; }
+        //public int AccountNumber { get; set; }
         public string AccountType { get; set; }
 
         public bool CanWithdraw { get; set; }  
@@ -76,5 +76,9 @@ namespace BankApp
             //return "Failed ! Insufficient fund/ Enter Amount less than 10000";
         }
 
+        public override string AccountDetails()
+        {
+           return string.Format("{0} {1} {2} {3}",FirstName,LastName,AccountNumber,Balance) ;
+        }
     }
 }
